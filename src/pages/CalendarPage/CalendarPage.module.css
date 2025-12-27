@@ -95,6 +95,7 @@
 .w200 {
   width: 200px;
 }
+
 .w150 {
   width: 150px;
 }
@@ -151,11 +152,9 @@
 }
 
 .dayCell:focus {
-  box-shadow: 0 0 0 2px #93c5fd;
-}
-
-.dayToday {
-  background-color: #fef3c7;
+  outline: none;
+  /* Remove default browser focus ring */
+  /* User requested no borders on click/selection */
 }
 
 .dayWeekend {
@@ -164,6 +163,17 @@
 
 .dayClosed {
   background-color: #fee2e2;
+}
+
+.dayToday {
+  background-color: #fef9c3;
+  /* Yellow-100 */
+}
+
+/* Selected wins over everything */
+.daySelected {
+  background-color: #eff6ff !important;
+  /* Blue-50 */
 }
 
 .dayCellEmpty {
@@ -565,11 +575,13 @@
 }
 
 @media print {
+
   .stickyControls,
   .sidePanel,
   .filterChips {
     display: none !important;
   }
+
   .calendar {
     border: none;
   }

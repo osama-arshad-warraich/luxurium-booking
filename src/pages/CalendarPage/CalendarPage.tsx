@@ -477,9 +477,8 @@ const CalendarPage: React.FC = () => {
 
           {/* Weeks */}
           <div
-            className={`${styles.weeks} ${
-              density === "COMPACT" ? styles.densityCompact : ""
-            }`}
+            className={`${styles.weeks} ${density === "COMPACT" ? styles.densityCompact : ""
+              }`}
           >
             {weeks.map((week, weekIndex) =>
               week.map((dayDate, dayIndex) => {
@@ -513,11 +512,11 @@ const CalendarPage: React.FC = () => {
                   ((lunchSummary &&
                     (lunchSummary.totalGuests >
                       computeHallUsage(lunchSummary.events).hallACapacity +
-                        computeHallUsage(lunchSummary.events).hallBCapacity)) ||
+                      computeHallUsage(lunchSummary.events).hallBCapacity)) ||
                     (dinnerSummary &&
                       (dinnerSummary.totalGuests >
                         computeHallUsage(dinnerSummary.events).hallACapacity +
-                          computeHallUsage(dinnerSummary.events).hallBCapacity)));
+                        computeHallUsage(dinnerSummary.events).hallBCapacity)));
 
                 const hasPerformance =
                   highlightPerformance &&
@@ -532,19 +531,18 @@ const CalendarPage: React.FC = () => {
                 return (
                   <div
                     key={`${weekIndex}-${dayIndex}`}
-                    className={`${styles.dayCell} ${
-                      isToday ? styles.dayToday : ""
-                    } ${isWeekend ? styles.dayWeekend : ""} ${
-                      dayClosed ? styles.dayClosed : ""
-                    }`}
+                    className={`${styles.dayCell} ${isToday ? styles.dayToday : ""
+                      } ${selectedDay && dateKey(selectedDay) === key
+                        ? styles.daySelected
+                        : ""
+                      } ${isWeekend ? styles.dayWeekend : ""} ${dayClosed ? styles.dayClosed : ""
+                      }`}
                     data-day-index={`${weekIndex * 7 + dayIndex}`}
                     tabIndex={0}
                     role="button"
-                    aria-label={`${
-                      weekdayLabels[dayIndex]
-                    } ${dayDate.toLocaleDateString("en-GB")} with ${
-                      dayBookings.length
-                    } events`}
+                    aria-label={`${weekdayLabels[dayIndex]
+                      } ${dayDate.toLocaleDateString("en-GB")} with ${dayBookings.length
+                      } events`}
                     onClick={() => {
                       setPanelSide(openSide);
                       setSelectedDay(dayDate);
@@ -645,9 +643,8 @@ const CalendarPage: React.FC = () => {
       {/* FIXED SIDE PANEL (left or right) */}
       {hasSidePanel && (
         <div
-          className={`${styles.sidePanel} ${
-            effectivePanelSide === "right" ? styles.sideRight : styles.sideLeft
-          }`}
+          className={`${styles.sidePanel} ${effectivePanelSide === "right" ? styles.sideRight : styles.sideLeft
+            }`}
         >
           <Card className={styles.sideCard}>
             {/* Header with close */}
@@ -721,10 +718,10 @@ const CalendarPage: React.FC = () => {
                       style={
                         slotPanelClosed
                           ? {
-                              borderColor: "#b91c1c",
-                              backgroundColor: "#fee2e2",
-                              color: "#b91c1c",
-                            }
+                            borderColor: "#b91c1c",
+                            backgroundColor: "#fee2e2",
+                            color: "#b91c1c",
+                          }
                           : {}
                       }
                     >
@@ -742,10 +739,10 @@ const CalendarPage: React.FC = () => {
                       style={
                         slotPanelDayClosed
                           ? {
-                              borderColor: "#b91c1c",
-                              backgroundColor: "#fee2e2",
-                              color: "#b91c1c",
-                            }
+                            borderColor: "#b91c1c",
+                            backgroundColor: "#fee2e2",
+                            color: "#b91c1c",
+                          }
                           : {}
                       }
                     >
@@ -767,10 +764,10 @@ const CalendarPage: React.FC = () => {
                       style={
                         slotPanelClosed
                           ? {
-                              borderColor: "#9ca3af",
-                              backgroundColor: "#e5e7eb",
-                              color: "#6b7280",
-                            }
+                            borderColor: "#9ca3af",
+                            backgroundColor: "#e5e7eb",
+                            color: "#6b7280",
+                          }
                           : { marginLeft: "auto", whiteSpace: "nowrap" }
                       }
                     >
@@ -891,10 +888,10 @@ const CalendarPage: React.FC = () => {
                       style={
                         dayPanelClosed
                           ? {
-                              borderColor: "#b91c1c",
-                              backgroundColor: "#fee2e2",
-                              color: "#b91c1c",
-                            }
+                            borderColor: "#b91c1c",
+                            backgroundColor: "#fee2e2",
+                            color: "#b91c1c",
+                          }
                           : {}
                       }
                     >
@@ -909,9 +906,8 @@ const CalendarPage: React.FC = () => {
                     <h3 className={styles.sectionTitle}>
                       Lunch Slot
                       {dayPanelLunchSummary
-                        ? ` – ${dayPanelLunchSummary.totalGuests} guests, ${dayPanelLunchSummary.events.length} event${
-                            dayPanelLunchSummary.events.length > 1 ? "s" : ""
-                          }`
+                        ? ` – ${dayPanelLunchSummary.totalGuests} guests, ${dayPanelLunchSummary.events.length} event${dayPanelLunchSummary.events.length > 1 ? "s" : ""
+                        }`
                         : ""}
                     </h3>
                     {dayLunchBookings.length === 0 ? (
@@ -930,9 +926,8 @@ const CalendarPage: React.FC = () => {
                     <h3 className={styles.sectionTitle}>
                       Dinner Slot
                       {dayPanelDinnerSummary
-                        ? ` – ${dayPanelDinnerSummary.totalGuests} guests, ${dayPanelDinnerSummary.events.length} event${
-                            dayPanelDinnerSummary.events.length > 1 ? "s" : ""
-                          }`
+                        ? ` – ${dayPanelDinnerSummary.totalGuests} guests, ${dayPanelDinnerSummary.events.length} event${dayPanelDinnerSummary.events.length > 1 ? "s" : ""
+                        }`
                         : ""}
                     </h3>
                     {dayDinnerBookings.length === 0 ? (
@@ -1164,8 +1159,8 @@ function handleDayKeyDown(
       lunchSummary && lunchSummary.events.length > 0
         ? "LUNCH"
         : dinnerSummary && dinnerSummary.events.length > 0
-        ? "DINNER"
-        : "LUNCH";
+          ? "DINNER"
+          : "LUNCH";
     setPanelSide(dayDate.getDay() <= 3 ? "right" : "left");
     setSelectedDay(dayDate);
     setSelectedSlot({ date: dayDate, slot: slotToOpen });
