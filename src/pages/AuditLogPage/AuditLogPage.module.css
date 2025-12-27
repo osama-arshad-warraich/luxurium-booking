@@ -1,0 +1,280 @@
+.page {
+  padding: 1.5rem;
+}
+
+.subhead {
+  margin-top: 0.25rem;
+  color: #4b5563;
+}
+
+.filtersCard {
+  margin-top: 1rem;
+}
+
+.filtersRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-end;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldGrow {
+  flex: 1 1 260px;
+}
+
+.label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+  color: #4b5563;
+}
+
+.input {
+  width: 100%;
+  padding: 0.35rem 0.45rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 0.85rem;
+  background-color: #ffffff;
+}
+
+.select {
+  appearance: auto;
+}
+
+.timeRange {
+  min-width: 260px;
+}
+
+.presetRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+}
+
+.presetBtn {
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  font-size: 0.78rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.presetBtnActive {
+  border-color: #2563eb;
+  background-color: #eff6ff;
+}
+
+.dateInput {
+  width: 150px;
+}
+
+.numberInput {
+  width: 140px;
+}
+
+.optionsField {
+  min-width: 180px;
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: #4b5563;
+}
+
+.tableCard {
+  margin-top: 1rem;
+}
+
+.tableHeader {
+  padding: 0.6rem 0.9rem;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.tableScroll {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.theadRow {
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.th {
+  text-align: left;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #4b5563;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.td {
+  padding: 0.6rem 0.9rem;
+  vertical-align: top;
+  font-size: 0.88rem;
+}
+
+.emptyCell {
+  padding: 0.9rem;
+  text-align: center;
+  color: #6b7280;
+}
+
+.row {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.rowExpanded {
+  border-bottom: none;
+}
+
+.whenIdMeta {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 0.05rem;
+}
+
+.whenActorMeta {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 0.05rem;
+}
+
+.bookingLink {
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.bookingMeta {
+  font-size: 0.78rem;
+  color: #6b7280;
+  margin-top: 0.05rem;
+}
+
+.deletedBadge {
+  margin-top: 0.1rem;
+  display: inline-flex;
+  padding: 0.05rem 0.35rem;
+  border-radius: 999px;
+  border: 1px solid #fca5a5;
+  background-color: #fef2f2;
+  font-size: 0.7rem;
+  color: #b91c1c;
+}
+
+.missingBooking {
+  color: #9ca3af;
+}
+
+.changesMeta {
+  font-size: 0.8rem;
+  color: #4b5563;
+  margin-bottom: 0.25rem;
+}
+
+.tagsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.fieldTag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background-color: #f3f4f6;
+  font-size: 0.75rem;
+}
+
+.fieldTagMore {
+  background-color: #f9fafb;
+  border-style: dashed;
+}
+
+.noDiff {
+  color: #9ca3af;
+  font-size: 0.8rem;
+}
+
+.diffRow {
+  border-bottom: 1px solid #f3f4f6;
+  background-color: #f9fafb;
+}
+
+.diffCell {
+  padding: 0.65rem 0.9rem;
+  font-size: 0.86rem;
+}
+
+.diffLabel {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #9ca3af;
+  margin-bottom: 0.35rem;
+}
+
+.diffGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.05fr) minmax(0, 1.05fr);
+  gap: 0.4rem;
+  align-items: flex-start;
+}
+
+.diffHeaderCell {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.diffFieldName {
+  font-weight: 600;
+  color: #374151;
+}
+
+.diffBefore {
+  color: #6b7280;
+  white-space: pre-wrap;
+}
+
+.diffAfter {
+  white-space: pre-wrap;
+}
+
+.diffAfterChanged {
+  color: #111827;
+}
+
+.diffAfterSame {
+  color: #6b7280;
+}

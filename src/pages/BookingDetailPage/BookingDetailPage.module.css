@@ -1,0 +1,684 @@
+/* src/pages/BookingDetailPage/BookingDetailPage.module.css */
+
+.page {
+  padding: 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.headerLeft {
+  min-width: 0;
+  flex: 1;
+}
+
+.headerRight {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.subtitleMuted {
+  margin-top: 0.25rem;
+  color: #4b5563;
+}
+
+.topActionsRow {
+  margin-top: 0.75rem;
+}
+
+.deletedBanner {
+  margin-top: 0.5rem;
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #fecaca;
+  background-color: #fef2f2;
+  font-size: 0.85rem;
+  color: #b91c1c;
+}
+
+.metaRow {
+  margin-top: 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  font-size: 0.86rem;
+  color: #4b5563;
+}
+
+.metaDot {
+  opacity: 0.6;
+}
+
+.dirtyBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid #fde68a;
+  background: #fffbeb;
+  color: #92400e;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.twoCol {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.2fr);
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+@media (max-width: 980px) {
+  .twoCol {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .headerRight {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.colStack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Card title + header rows */
+.cardTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.cardHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cardHeaderActions {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inlineMuted {
+  color: #6b7280;
+  font-size: 0.78rem;
+}
+
+/* Label/value rows */
+.labelRow {
+  margin-top: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.labelKey {
+  min-width: 120px;
+  color: #6b7280;
+}
+
+.labelValue {
+  flex: 1;
+  text-align: right;
+  color: #111827;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+/* Warnings */
+.warnBox {
+  margin-top: 0.7rem;
+  padding: 0.55rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #fde68a;
+  background: #fffbeb;
+  color: #92400e;
+  font-size: 0.86rem;
+}
+
+/* Internal note */
+.internalNote {
+  margin-top: 0.75rem;
+  padding-top: 0.6rem;
+  border-top: 1px dashed #e5e7eb;
+}
+
+.internalNoteLabel {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #9ca3af;
+  margin-bottom: 0.25rem;
+}
+
+.internalNoteBody {
+  font-size: 0.9rem;
+  color: #374151;
+  white-space: pre-wrap;
+}
+
+/* Edit grid */
+.editGrid {
+  margin-top: 0.6rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+  font-size: 0.86rem;
+}
+
+@media (max-width: 760px) {
+  .editGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.editCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.fieldLabel {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+  color: #4b5563;
+}
+
+.fieldLabelNoMargin {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #4b5563;
+}
+
+.input {
+  width: 100%;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 0.9rem;
+}
+
+.textarea {
+  width: 100%;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 0.9rem;
+  min-height: 80px;
+  resize: vertical;
+}
+
+.textareaSmall {
+  width: 100%;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 0.9rem;
+  min-height: 60px;
+  resize: vertical;
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.performanceBlock {
+  margin-top: 0.4rem;
+}
+
+/* Hall allocation */
+.hallSummary {
+  margin-top: 0.6rem;
+  padding: 0.55rem 0.6rem;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  font-size: 0.9rem;
+}
+
+.hallSummaryMuted {
+  margin-top: 0.2rem;
+  color: #4b5563;
+}
+
+.hallSummaryWarn {
+  margin-top: 0.25rem;
+  color: #92400e;
+  font-weight: 600;
+}
+
+.hallSummaryPerf {
+  margin-top: 0.25rem;
+  color: #b91c1c;
+}
+
+.hallEditBox {
+  margin-top: 0.7rem;
+  padding: 0.6rem 0.65rem;
+  border-radius: 8px;
+  border: 1px dashed #e5e7eb;
+  background-color: #ffffff;
+  font-size: 0.86rem;
+}
+
+.hallEditHeader {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #9ca3af;
+  margin-bottom: 0.35rem;
+}
+
+.hallEditGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+@media (max-width: 760px) {
+  .hallEditGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hallFieldTitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  color: #111827;
+}
+
+.hallEditFooter {
+  margin-top: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.hallEditHint {
+  font-size: 0.78rem;
+  color: #6b7280;
+}
+
+.miniCardsGrid {
+  margin-top: 0.7rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+@media (max-width: 760px) {
+  .miniCardsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.capacityOverrideBanner {
+  margin-top: 0.75rem;
+  padding: 0.6rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #fecaca;
+  background-color: #fef2f2;
+  font-size: 0.85rem;
+  color: #b91c1c;
+}
+
+/* Hall mini cards */
+.hallMiniCard {
+  padding: 0.55rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  font-size: 0.86rem;
+}
+
+.hallMiniUnused {
+  background: #f9fafb;
+}
+
+.hallMiniOver {
+  border-color: #fca5a5;
+  background: #fef2f2;
+}
+
+.hallMiniTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.hallMiniTitle {
+  font-weight: 600;
+}
+
+.hallMiniCap {
+  font-size: 0.78rem;
+  color: #6b7280;
+}
+
+.capacityBar {
+  margin-top: 0.3rem;
+  height: 6px;
+  border-radius: 999px;
+  background: #e5e7eb;
+  overflow: hidden;
+}
+
+.capacityFillOk {
+  height: 100%;
+  border-radius: 999px;
+  background: #22c55e;
+}
+
+.capacityFillOver {
+  height: 100%;
+  border-radius: 999px;
+  background: #ef4444;
+}
+
+.hallMiniLine {
+  margin-top: 0.3rem;
+  color: #4b5563;
+}
+
+.hallMiniLineMuted {
+  margin-top: 0.15rem;
+  color: #6b7280;
+}
+
+.hallMiniBottomLine {
+  margin-top: 0.28rem;
+  font-size: 0.78rem;
+}
+
+.overText {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.okText {
+  color: #16a34a;
+}
+
+/* Menu placeholder */
+.menuPlaceholderBox {
+  margin-top: 0.6rem;
+  padding: 0.6rem 0.7rem;
+  border-radius: 8px;
+  border: 1px dashed #e5e7eb;
+  background-color: #f9fafb;
+  font-size: 0.88rem;
+  color: #6b7280;
+}
+
+.menuPlaceholderList {
+  margin-top: 0.35rem;
+  padding-left: 1.1rem;
+}
+
+/* Alerts */
+.alertList {
+  margin-top: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.alertRow {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0.55rem 0.6rem;
+  background: #ffffff;
+}
+
+.alertRowTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.alertLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.alertType {
+  font-weight: 700;
+  color: #111827;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.alertDot {
+  opacity: 0.55;
+}
+
+.alertId {
+  color: #6b7280;
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.alertPill {
+  padding: 0.14rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.alertPill[data-severity="critical"] {
+  border-color: #fecaca;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.alertPill[data-severity="warning"] {
+  border-color: #fde68a;
+  background: #fffbeb;
+  color: #92400e;
+}
+
+.alertPill[data-severity="info"] {
+  border-color: #bfdbfe;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.alertBody {
+  margin-top: 0.35rem;
+  color: #374151;
+  font-size: 0.85rem;
+}
+
+.alertActions {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+/* Quick copy row */
+.quickCopyRow {
+  margin-top: 0.55rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* Advance */
+.advanceBlock {
+  font-size: 0.9rem;
+}
+
+.advanceRow {
+  margin-top: 0.2rem;
+}
+
+/* Audit list */
+.auditList {
+  margin-top: 0.4rem;
+  list-style: none;
+  padding: 0;
+  font-size: 0.85rem;
+}
+
+.auditItem {
+  padding: 0.45rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.auditTopRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.auditAt {
+  flex: 1;
+  text-align: right;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.auditSummary {
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  color: #111827;
+}
+
+.auditDiffList {
+  margin-top: 0.25rem;
+  padding-left: 0.9rem;
+  list-style: disc;
+  color: #4b5563;
+  font-size: 0.8rem;
+}
+
+.diffArrow {
+  opacity: 0.7;
+}
+
+.topMarginSm {
+  margin-top: 0.4rem;
+}
+
+/* Quick nav */
+.quickNavStack {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+/* Danger zone */
+.dangerRow {
+  margin-top: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.dangerText {
+  color: #6b7280;
+  margin: 0;
+  font-size: 0.86rem;
+}
+
+.deleteButton {
+  border-color: #b91c1c !important;
+  color: #b91c1c !important;
+}
+
+.restoreButton {
+  margin-top: 0.6rem;
+  border-color: #16a34a !important;
+  color: #16a34a !important;
+}
+
+.deleteConfirmBox {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+}
+
+.blockLabel {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.confirmActions {
+  margin-top: 0.6rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.confirmDelete {
+  border-color: #b91c1c !important;
+  background-color: #b91c1c !important;
+  color: #ffffff !important;
+}
+
+.confirmDeleteDisabled {
+  border-color: #e5e7eb !important;
+  background-color: #f3f4f6 !important;
+  color: #9ca3af !important;
+}
+
+/* Buttons that need spacing */
+.fullWidthButton {
+  margin-top: 0.7rem;
+}
+
+/* Print */
+@media print {
+  .headerRight,
+  .quickNavStack,
+  .dangerRow,
+  .deleteConfirmBox,
+  .quickCopyRow,
+  .alertActions {
+    display: none !important;
+  }
+
+  .page {
+    padding: 0 !important;
+  }
+}

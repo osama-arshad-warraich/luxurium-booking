@@ -1,0 +1,80 @@
+.page {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.header {
+  height: 3.25rem;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+
+.brandWrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brandLogo {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 2px solid #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandTitle {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.brandSub {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navLink {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: #374151;
+  cursor: pointer;
+}
+
+.navLinkActive {
+  border: 1px solid #2563eb;
+  background-color: #e0ecff;
+  color: #1d4ed8;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}

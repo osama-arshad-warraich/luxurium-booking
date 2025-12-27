@@ -1,0 +1,374 @@
+.main {
+  padding: 1.5rem;
+}
+
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.intro {
+  margin-top: 0.25rem;
+  color: #555;
+  max-width: 720px;
+}
+
+.pageActions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filtersCard {
+  margin-top: 1rem;
+}
+
+.filtersRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-end;
+}
+
+.search {
+  flex: 1 1 260px;
+  min-width: 240px;
+}
+
+.searchInputWrap {
+  position: relative;
+}
+
+.searchHint {
+  margin-top: 0.25rem;
+  font-size: 0.78rem;
+  color: #6b7280;
+}
+
+.clearSearchButton {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  color: #4b5563;
+}
+
+.clearSearchButton:hover {
+  background: #f3f4f6;
+}
+
+.dateGroup {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filterLabel {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+  color: #4b5563;
+}
+
+.filterInput {
+  width: 100%;
+  padding: 0.35rem 0.45rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 0.85rem;
+  background: #fff;
+}
+
+.w80 {
+  width: 80px;
+}
+.w90 {
+  width: 90px;
+}
+.w110 {
+  width: 110px;
+}
+.w120 {
+  width: 120px;
+}
+.w140 {
+  width: 140px;
+}
+.w150 {
+  width: 150px;
+}
+.w170 {
+  width: 170px;
+}
+.w190 {
+  width: 190px;
+}
+
+.clearRow {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.summary {
+  margin-left: auto;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.tableCard {
+  margin-top: 1rem;
+  padding: 0;
+  overflow: hidden;
+}
+
+.tableHeader {
+  padding: 0.6rem 0.9rem;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.tableHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.paginationControls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pageLabel {
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.densityCompact .th {
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+  font-size: 0.78rem;
+}
+
+.densityCompact .td {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.theadRow {
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.th {
+  text-align: left;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #4b5563;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.td {
+  padding: 0.6rem 0.9rem;
+  vertical-align: top;
+  font-size: 0.88rem;
+}
+
+.row {
+  border-bottom: 1px solid #f3f4f6;
+  background-color: #ffffff;
+}
+
+.rowClickable {
+  cursor: pointer;
+}
+
+.rowClickable:hover {
+  background-color: #f9fafb;
+}
+
+.rowDeleted {
+  background-color: #f9fafb;
+}
+
+.rowDeletedDim {
+  opacity: 0.85;
+}
+
+.emptyCell {
+  padding: 0.9rem;
+  text-align: center;
+}
+
+.emptyText {
+  color: #6b7280;
+}
+
+.datePrimary {
+  font-weight: 600;
+}
+
+.smallMuted {
+  font-size: 0.78rem;
+  color: #6b7280;
+  margin-top: 0.1rem;
+}
+
+.smallFaint {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 0.1rem;
+}
+
+.eventTitle {
+  font-weight: 600;
+}
+
+.nameplate {
+  font-size: 0.78rem;
+  color: #6b7280;
+  margin-top: 0.05rem;
+}
+
+.refText {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 0.1rem;
+}
+
+.performance {
+  font-size: 0.78rem;
+  color: #b91c1c;
+  margin-top: 0.1rem;
+}
+
+.customerName {
+  font-weight: 600;
+}
+
+.customerSub {
+  font-size: 0.8rem;
+  color: #4b5563;
+  margin-top: 0.05rem;
+}
+
+.customerMeta {
+  font-size: 0.78rem;
+  color: #6b7280;
+  margin-top: 0.1rem;
+}
+
+.guestCount {
+  font-weight: 600;
+}
+
+.guestSplit {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-top: 0.1rem;
+}
+
+.alertBadgeWrap {
+  margin-top: 0.35rem;
+}
+
+.alertBadge {
+  padding: 0.08rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  font-size: 0.75rem;
+  white-space: nowrap;
+  display: inline-flex;
+}
+
+.alertBadgeInfo {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+
+.alertBadgeWarning {
+  background-color: #fffbeb;
+  color: #92400e;
+  border-color: #facc15;
+}
+
+.alertBadgeCritical {
+  background-color: #fef2f2;
+  color: #b91c1c;
+  border-color: #fecaca;
+}
+
+.deletedBadgeWrap {
+  margin-top: 0.3rem;
+  font-size: 0.75rem;
+}
+
+.deletedBadge {
+  padding: 0.05rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid #fca5a5;
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.actionsCell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.actionRow {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.footerPager {
+  padding: 0.6rem 0.9rem;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.footerSummary {
+  font-size: 0.85rem;
+  color: #6b7280;
+}

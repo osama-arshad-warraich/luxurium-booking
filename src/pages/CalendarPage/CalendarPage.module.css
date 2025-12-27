@@ -1,0 +1,576 @@
+.page {
+  padding: 1.5rem;
+}
+
+.subhead {
+  margin-top: 0.25rem;
+  color: #555;
+  max-width: 840px;
+}
+
+.legendRow {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #4b5563;
+}
+
+.legendSwatch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.legendSquare {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  border: 1px solid #e5e7eb;
+}
+
+.legendNote {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.controls {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stickyControls {
+  position: sticky;
+  top: 0.5rem;
+  background: #f3f4f6;
+  padding: 0.65rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  z-index: 5;
+}
+
+.controlGroup {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.monthLabel {
+  font-weight: 600;
+}
+
+.filterChips {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.chip {
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.chipActive {
+  border-color: #2563eb;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.input {
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 0.9rem;
+}
+
+.w200 {
+  width: 200px;
+}
+.w150 {
+  width: 150px;
+}
+
+.calendarWrap {
+  margin-top: 0.5rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.calendar {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.weekdayHeader {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #f3f4f6;
+}
+
+.weekdayCell {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #4b5563;
+  border-right: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.weeks {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.densityCompact .dayCell {
+  padding: 0.35rem 0.4rem;
+}
+
+.dayCell {
+  min-height: 160px;
+  border-right: 1px solid #f3f4f6;
+  border-bottom: 1px solid #f3f4f6;
+  padding: 0.4rem 0.45rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.dayCell:focus {
+  box-shadow: 0 0 0 2px #93c5fd;
+}
+
+.dayToday {
+  background-color: #fef3c7;
+}
+
+.dayWeekend {
+  background-color: #f9fafb;
+}
+
+.dayClosed {
+  background-color: #fee2e2;
+}
+
+.dayCellEmpty {
+  min-height: 140px;
+  border-right: 1px solid #f3f4f6;
+  border-bottom: 1px solid #f3f4f6;
+  background-color: #f9fafb;
+}
+
+.dayHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.dayDate {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.dayMeta {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.dayEventsMeta {
+  font-size: 0.7rem;
+  color: #6b7280;
+}
+
+.closedBadge {
+  font-size: 0.7rem;
+  color: #b91c1c;
+  border-radius: 999px;
+  border: 1px solid #fecaca;
+  padding: 0.05rem 0.4rem;
+  background-color: #fee2e2;
+}
+
+.slotBlock {
+  padding: 0.15rem 0.1rem;
+  border-radius: 6px;
+  background-color: rgba(249, 250, 251, 0.9);
+  margin-bottom: 0.25rem;
+}
+
+.slotDinner {
+  background-color: rgba(243, 244, 246, 0.95);
+  border-top: 1px dashed #e5e7eb;
+  margin-top: 0.1rem;
+}
+
+.slotHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.1rem;
+}
+
+.slotLabel {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #4b5563;
+}
+
+.closedPill {
+  font-size: 0.7rem;
+  color: #b91c1c;
+  border-radius: 999px;
+  border: 1px solid #fecaca;
+  padding: 0.05rem 0.4rem;
+  background-color: #fee2e2;
+}
+
+.slotBox {
+  padding: 0.2rem 0.3rem;
+  border-radius: 6px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+}
+
+.slotBoxClosed {
+  background-color: #fee2e2;
+  border-color: #b91c1c;
+}
+
+.slotBoxEmpty {
+  padding: 0.2rem 0.3rem;
+  border-radius: 6px;
+  background-color: #ffffff;
+  border: 1px dashed #e5e7eb;
+  cursor: pointer;
+}
+
+.slotEmptyText {
+  font-size: 0.72rem;
+  color: #9ca3af;
+}
+
+.slotClosedText {
+  font-size: 0.7rem;
+  color: #b91c1c;
+  margin-top: 0.05rem;
+}
+
+.slotHeaderRow {
+  font-size: 0.75rem;
+  color: #4b5563;
+}
+
+.slotIcon {
+  margin-left: 0.15rem;
+}
+
+.slotOverride {
+  margin-left: 0.25rem;
+  font-size: 0.7rem;
+  color: #b91c1c;
+}
+
+.slotUsage {
+  margin-top: 0.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.slotUsageItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+}
+
+.slotUsageLabel {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.slotUsageValue {
+  font-size: 0.7rem;
+  color: #4b5563;
+}
+
+.eventPills {
+  margin-top: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.eventPill {
+  font-size: 0.73rem;
+  border-radius: 4px;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  padding: 0.15rem 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.eventPillText {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.eventPillTitle {
+  font-weight: 600;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.eventPillSub {
+  font-size: 0.72rem;
+  opacity: 0.9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.eventPillGuests {
+  white-space: nowrap;
+  margin-left: 0.25rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.dayBadges {
+  margin-top: 0.35rem;
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background-color: #f3f4f6;
+  color: #4b5563;
+}
+
+.sidePanel {
+  position: fixed;
+  top: 1rem;
+  bottom: 1rem;
+  width: 720px;
+  max-width: 95vw;
+  z-index: 40;
+}
+
+.sideRight {
+  right: 1rem;
+}
+
+.sideLeft {
+  left: 1rem;
+}
+
+.sideCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.9rem 1rem;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.2);
+}
+
+.sideHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.sideTitle {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.sideSubhead {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.sideScroll {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+}
+
+.usageBox {
+  margin-top: 0.4rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.usageItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+}
+
+.usageTitle {
+  font-weight: 700;
+  color: #111827;
+}
+
+.usageMeta {
+  color: #4b5563;
+  margin-top: 0.05rem;
+}
+
+.usageStack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.usageInline {
+  font-size: 0.85rem;
+}
+
+.actionRow {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.slotEvents {
+  margin-top: 0.75rem;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 0.75rem;
+}
+
+.sectionTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.muted {
+  margin-top: 0.25rem;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.eventList {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.eventCard {
+  padding: 0.5rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+}
+
+.eventTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.eventTitle {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.eventSub {
+  font-size: 0.78rem;
+  color: #6b7280;
+  margin-top: 0.05rem;
+}
+
+.eventMeta {
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  text-align: right;
+}
+
+.eventMetaSub {
+  color: #6b7280;
+  margin-top: 0.05rem;
+}
+
+.eventBadges {
+  margin-top: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.eventDim {
+  color: #6b7280;
+}
+
+.performanceBadge {
+  color: #b91c1c;
+}
+
+.eventActions {
+  margin-top: 0.4rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.slotSection {
+  margin-top: 0.9rem;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+@media print {
+  .stickyControls,
+  .sidePanel,
+  .filterChips {
+    display: none !important;
+  }
+  .calendar {
+    border: none;
+  }
+}
